@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER NOW</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Order Form</title>
+    <style>
+        body{
+            background: url('../pizza-3007395.jpg') no-repeat center center/cover;
+            opacity: 0.5;
+            z-index: -1;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Pizza Order Form</h1>
+    <form action="/submit_order" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="pizza_size">Pizza Size:</label>
+        <select id="pizza_size" name="pizza_size" required>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br>
+
+        <label>Toppings:</label><br>
+        <input type="checkbox" id="pepperoni" name="toppings[]" value="Pepperoni">
+        <label for="pepperoni">Pepperoni</label><br>
+
+        <input type="checkbox" id="mushrooms" name="toppings[]" value="Mushrooms">
+        <label for="mushrooms">Mushrooms</label><br>
+
+        <input type="checkbox" id="onions" name="toppings[]" value="Onions">
+        <label for="onions">Onions</label><br>
+
+        <input type="checkbox" id="peppers" name="toppings[]" value="Bell Peppers">
+        <label for="peppers">Bell Peppers</label><br>
+
+        <input type="checkbox" id="olives" name="toppings[]" value="Olives">
+        <label for="olives">Olives</label><br>
+
+        <label for="instructions">Special Instructions:</label><br>
+        <textarea id="instructions" name="instructions" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
+
+    
+</body>
+</html>
